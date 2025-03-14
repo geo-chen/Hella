@@ -9,7 +9,7 @@ The HELLA 820 dashcam uses a fixed default SSID and password ("qwertyuiop"), whi
 Additionally, the SSID is continuously broadcast, making the device network perpetually open to unauthorized access.
 
 ## Finding 2 (low risk): Hardcoded credentials in APK to ports 9091 (API) and 9092 (RTSP)
-The HELLA 820 dashcam’s Android APK contains hardcoded credentials that allow unauthorized access to device settings through ports 9091 and 9092. Once connected to the dashcam's SSID, an attacker can send a crafted command ("TibetList" and "000*") to retrieve device settings from port 9091. Additionally, credentials stored in plaintext, such as "admin" + "tib*" for port 9092 (stream) and "adim" + "000*" for settings, can be exploited by an attacker who gains access to the dashcam’s network.
+The HELLA 820 dashcam’s Android APK (Hella Bulb v1.3) contains hardcoded credentials that allow unauthorized access to device settings through ports 9091 and 9092. Once connected to the dashcam's SSID, an attacker can send a crafted command ("TibetList" and "000*") to retrieve device settings from port 9091. Additionally, credentials stored in plaintext, such as "admin" + "tib*" for port 9092 (stream) and "adim" + "000*" for settings, can be exploited by an attacker who gains access to the dashcam’s network.
 
 ## Finding 3 (critical risk): Bypassing of device pairing [CWE-798]
 The HELLA 820 dashcam’s pairing mechanism relies solely on the connecting device’s MAC address. By obtaining the MAC address through network scanning and spoofing it, an attacker can bypass the authentication process and gain full access to the dashcam’s features without proper authorization. ​
