@@ -25,8 +25,13 @@ Inspecting the DNS traffic, we also noticed that a configured internal domain na
 
 ## Disclosure
 16 Feb 2025 - Disclosure to Hella's securemail
+
 17 Feb 2025 - Also contacted Hella's generic inbox
-7 Mar 2025 - Follow up to get Hella's response
+
+7 Mar 2025 - 2nd follow up to get Hella's response
+
 17 Mar 2025 - Coordinated with Mitre to publish this writeup and get the CVE assignments
+
 17 Mar 2025 - Hella's security team reached out requesting for temporary takedown
+
 18 Mar 2025 - Redacted repo for 3 months
